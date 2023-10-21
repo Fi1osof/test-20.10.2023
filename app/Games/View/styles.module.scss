@@ -1,0 +1,40 @@
+.gamesView {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // padding: 15px;
+  gap: 15px;
+
+  .gamesListFilters {
+    padding: 15px 15px 0;
+    display: flex;
+    gap: 15px;
+  }
+
+  .gamesListWrapper {
+    flex: 1;
+    overflow: hidden;
+
+    .gamesList {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 15px;
+      overflow: auto;
+      max-height: 100%;
+      padding: 0 15px 15px 15px;
+
+      > .gamesListItem {
+        display: block;
+        aspect-ratio: 337/181;
+        border: 1px solid grey;
+        padding: 10px;
+      }
+    }
+  }
+
+  .footer {
+    padding: 0 15px 15px 15px;
+    display: flex;
+    justify-content: center;
+  }
+}
